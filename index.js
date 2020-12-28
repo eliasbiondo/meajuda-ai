@@ -2,9 +2,13 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const Sequelize = require('sequelize');
+const env = require('dotenv');
 const colors = require('colors');
 const routes = require('./routes');
 const connection = require('./database/connection');
+
+//Enviroment variables
+env.config()
 
 // Setting the application port
 const port = process.env.PORT || 4000;
