@@ -46,7 +46,7 @@
                 </div>
                 <dib class="buttons">
                     <div class="back_btn">
-                        <button type="button">
+                        <button type="button" onclick="goBack()">
                             
                         </button>
                     </div>
@@ -60,5 +60,10 @@
 
         </div>
     </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </body>
 </html>
