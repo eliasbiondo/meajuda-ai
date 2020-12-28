@@ -1,0 +1,15 @@
+:root {
+    font-size: 62.5%;
+    --primary: #267DFF;
+    --secondary: #F0F4FA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
