@@ -1,7 +1,10 @@
 // Importing modules
 const express = require('express');
 const bodyParser = require('body-parser');
+const Sequelize = require('sequelize');
+const colors = require('colors');
 const routes = require('./routes');
+const connection = require('./database/connection');
 
 // Setting the application port
 const port = process.env.PORT || 4000;
@@ -19,10 +22,21 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
+// Database connection
+connection
+    .authenticate()
+    .then( () => {
+        console.log('The database connection has been established successfully.'.green);
+})
+    .catch(error => {
+        console.log('Unable to connect to the database:\r\n'.red);
+        console.log(error);
+    })
+
 // Application routes
 app.use(routes);
 
 // Server config
 app.listen(port, error => {
-    console.log(`${error ? 'There was an error while initializing server.' + error : `Server started successfully on port ${port}!`}`)
+    console.log(`${error ? '\r\nThere was an error while initializing server.' + error : `\r\nServer started successfully on port ${port}!`.bold.green}`)
 })
