@@ -28,12 +28,12 @@
 
     <link
     rel="stylesheet"
-    href="../public/css/main.css"
+    href="/css/main.css"
     >
 
     <link
     rel="stylesheet"
-    href="../public/css/index.css"
+    href="/css/index.css"
     >
 
 </head>
@@ -47,7 +47,7 @@
                     <header>
 
                         <img 
-                        src="../public/img/blue-logo.svg" 
+                        src="/img/blue-logo.svg" 
                         alt="logotipo do meajuda.ai"
                         >
     
@@ -68,51 +68,23 @@
                 
                 <div class="section-title">
                     <p>Últimas perguntas</p>
-                    <img src="../public/img/last-questions-dashed-line.svg">
+                    <img src="/img/last-questions-dashed-line.svg">
                 </div>
 
-                <div class="question">
-                    <article>
-                        <h1>Como utilizar o SQL com o Sequelize?</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a cursus est. Cras venenatis pellentesque dolor, a semper odio fermentum sed. Mauris hendrerit sapien.</p>
-                    </article>
-                    <button type="button">
-                        <img src="../public/img/next-arrow.svg" alt="Responder à pergunta">
-                    </button>
-                </div>
-
-                <div class="question">
-                    <article>
-                        <h1>Como utilizar o SQL com o Sequelize?</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a cursus est. Cras venenatis pellentesque dolor, a semper odio fermentum sed. Mauris hendrerit sapien.</p>
-                    </article>
-                    <button type="button">
-                        <img src="../public/img/next-arrow.svg" alt="Responder à pergunta">
-                    </button>
-                </div>
-
-                <div class="question">
-                    <article>
-                        <h1>Como utilizar o SQL com o Sequelize?</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a cursus est. Cras venenatis pellentesque dolor, a semper odio fermentum sed. Mauris hendrerit sapien.</p>
-                    </article>
-                    <button type="button">
-                        <img src="../public/img/next-arrow.svg" alt="Responder à pergunta">
-                    </button>
-                </div>
-
-                <div class="question">
-                    <article>
-                        <h1>Como utilizar o SQL com o Sequelize?</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a cursus est. Cras venenatis pellentesque dolor, a semper odio fermentum sed. Mauris hendrerit sapien.</p>
-                    </article>
-                    <button type="button">
-                        <img src="../public/img/next-arrow.svg" alt="Responder à pergunta">
-                    </button>
-                </div>
+                <% questions.forEach( question => { %>
+                    <div class="question">
+                        <article>
+                            <h1><%= question.title %></h1>
+                            <p><%= question.description%></p>
+                        </article>
+                        <button type="button">
+                            <img src="/img/next-arrow.svg" alt="Responder à pergunta">
+                        </button>
+                    </div>
+                <% }) %>
 
                 <div class="section-footer">
-                    <img src="../public/img/last-questions-dashed-line.svg">
+                    <img src="/img/last-questions-dashed-line.svg">
                     
                     <a href="">
                         <p>Ver todas</p>
@@ -130,7 +102,7 @@
             <div class="content">
                 <a href="/">
                     <img 
-                    src="../public/img/white-logo.svg" 
+                    src="/img/white-logo.svg" 
                     alt="logotipo do meajuda.ai"
                     >
 
@@ -148,11 +120,12 @@
                     <p>Copyright 2020 &copy; meajuda.ai</p>
                     <p>developed with 
                         <img 
-                        src="../public/img/heart-emoji.png" 
+                        src="/img/heart-emoji.png" 
                         alt="emoji de coração"
                         > love by
                         <a 
-                        href="">
+                        href="https://github.com/eliasbiondo"
+                        target="_blank">
                         @eliasbiondo
                         </a>
                     </p>

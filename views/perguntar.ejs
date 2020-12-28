@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title> Perguntar | meajuda.ai</title>
+
+    <!-- Stylesheets -->
+
+    <link 
+    rel="stylesheet" 
+    href="/css/main.css"
+    >
+
+    <link
+    rel="stylesheet"
+    href="/css/perguntar.css"
+    >
+
+    <!-- Fonts -->
+    <link 
+    rel="preconnect" 
+    href="https://fonts.gstatic.com"
+    >
+
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" 
+    rel="stylesheet"
+    >
+</head>
+<body>
+    <div class="content">
+        <div class="main-section">
+            <div class="page-title">
+                <h1>Faça a sua pergunta</h1>
+                <h2>É bem fácil, rápido e prático.</h2>
+            </div>
+            <form action="/perguntar/salvarpergunta" method="POST">
+                <div class="input">
+                    <input type="text" name="title" id="title" autocomplete="off" required>
+                    <label for="title">Título</label>
+                </div>
+                <div class="input">
+                    <textarea name="description" id="description" autocomplete="off" required></textarea>
+                    <label for="title">Descrição</label>
+                </div>
+                <dib class="buttons">
+                    <div class="back_btn">
+                        <button type="button">
+                            
+                        </button>
+                    </div>
+                    <div class="submit">
+                        <button type="submit">
+                            Perguntar
+                        </button>
+                    </div>
+                </dib>
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>
