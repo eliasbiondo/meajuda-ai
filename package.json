@@ -1,0 +1,27 @@
+{
+  "name": "me-ajuda-ai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliasbiondo/me-ajuda-ai.git"
+  },
+  "author": "Elias Biondo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eliasbiondo/me-ajuda-ai/issues"
+  },
+  "homepage": "https://github.com/eliasbiondo/me-ajuda-ai#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.6",
+    "sequelize": "^6.3.5"
+  }
+}
