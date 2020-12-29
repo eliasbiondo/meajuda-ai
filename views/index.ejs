@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Página Inicial | meajuda.ai</title>
-    
+
     <!-- Favicon -->
+
     <link 
     rel="icon" 
-    type="image/png" 
-    href=""
+    type="image/svg" 
+    href="/img/blue-logo.svg"
     >
 
     <!-- Google Fonts -->
@@ -31,6 +32,7 @@
     href="/css/main.css"
     >
 
+
     <link
     rel="stylesheet"
     href="/css/index.css"
@@ -39,100 +41,125 @@
 </head>
 <body>
     <div class="home-page">
-        <div class="content">
-            
-            <!-- 'Main menu' section -->
-            <div class="main-menu">
-                <a href="/">
-                    <header>
+        
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <div class="header-content">
+
+                    <div class="website-logo">
 
                         <img 
                         src="/img/blue-logo.svg" 
-                        alt="logotipo do meajuda.ai"
+                        alt="Logotipo do site meajuda.ai, formada por dois sinais de interrogação azuis."
                         >
-    
-                        <div class="pg-title">
+
+                        <div class="website-logo-texts">
                             <h1>meajuda.ai</h1>
                             <h2>o seu portal de perguntas e respostas</h2>
                         </div>
 
-                    </header>
-                </a>  
-                <a class="ask-a-question-btn" href="/perguntar">
-                    Fazer uma pergunta
-                </a>
-            </div>
+                    </div>  
 
-            <!-- 'Last Questions' section -->
-            <div class="last-questions">
-                
-                <div class="section-title">
-                    <p>Últimas perguntas</p>
-                    <img src="/img/last-questions-dashed-line.svg">
-                </div>
-
-                <% questions.forEach( question => { %>
-                    <div class="question">
-                        <article>
-                            <h1><%= question.title %></h1>
-                            <p><%= question.description%></p>
-                        </article>
-                        <button type="button">
-                            <img src="/img/next-arrow.svg" alt="Responder à pergunta">
-                        </button>
-                    </div>
-                <% }) %>
-
-                <div class="section-footer">
-                    <img src="/img/last-questions-dashed-line.svg">
-                    
-                    <a href="">
-                        <p>Ver todas</p>
+                    <a 
+                    class="ask-a-question-btn" 
+                    href="/perguntar"
+                    >
+                        Fazer uma pergunta
                     </a>
 
                 </div>
-
             </div>
-        </div>
-    </div>
+        </header>
 
-    <footer>
-        
-        <div class="description-section">
-            <div class="content">
-                <a href="/">
-                    <img 
-                    src="/img/white-logo.svg" 
-                    alt="logotipo do meajuda.ai"
-                    >
+        <!-- 'Last questions' section -->
+        <div class="last-questions-section">
+            <div class="container">
+                <div class="last-questions-section-content">
 
-                    <div class="footer-pg-title">
-                        <h1>meajuda.ai</h1>
-                        <h2>o seu portal de perguntas e respostas</h2>
+                    <div class="section-title">
+                        <p>Últimas perguntas</p>
+                        <img src="/img/last-questions-dashed-line.svg">
                     </div>
-                </a>  
-            </div>
-        </div>
 
-        <div class="copyright-section">
-            <div class="content">
-                <div class="footer-text">
-                    <p>Copyright 2020 &copy; meajuda.ai</p>
-                    <p>developed with 
-                        <img 
-                        src="/img/heart-emoji.png" 
-                        alt="emoji de coração"
-                        > love by
-                        <a 
-                        href="https://github.com/eliasbiondo"
-                        target="_blank">
-                        @eliasbiondo
+                    <article class="question">
+                        <div class="question-text-area">
+                            <h1>Como utilizar o SQL com o Sequelize?</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a cursus est. Cras venenatis pellentesque dolor, a semper odio fermentum sed. Mauris hendrerit sapien.</p>
+                        </div>
+                        <a class="question-btn-area" href="">
+                            <img src="/img/next-arrow.svg" alt="Responder pergunta">
                         </a>
-                    </p>
+                    </article>
+
+                    <article class="question">
+                        <div class="question-text-area">
+                            <h1>Como utilizar o SQL com o Sequelize?</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a cursus est. Cras venenatis pellentesque dolor, a semper odio fermentum sed. Mauris hendrerit sapien.</p>
+                        </div>
+                        <a class="question-btn-area" href="">
+                            <img src="/img/next-arrow.svg" alt="Responder pergunta">
+                        </a>
+                    </article>
+
+                    <article class="question">
+                        <div class="question-text-area">
+                            <h1>Como utilizar o SQL com o Sequelize?</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a cursus est. Cras venenatis pellentesque dolor, a semper odio fermentum sed. Mauris hendrerit sapien.</p>
+                        </div>
+                        <a class="question-btn-area" href="">
+                            <img src="/img/next-arrow.svg" alt="Responder pergunta">
+                        </a>
+                    </article>
+
+                    <article class="question">
+                        <div class="question-text-area">
+                            <h1>Como utilizar o SQL com o Sequelize?</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a cursus est. Cras venenatis pellentesque dolor, a semper odio fermentum sed. Mauris hendrerit sapien.</p>
+                        </div>
+                        <a class="question-btn-area" href="">
+                            <img src="/img/next-arrow.svg" alt="Responder pergunta">
+                        </a>
+                    </article>
+
+                    <div class="section-footer">
+                        <img src="/img/see-all-dashed-line.svg">
+                        <a href="">Ver todas</a>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </footer>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-top-section">
+                <div class="container">
+                    <div class="footer-top-section-content">
+                        <div class="footer-website-logo">
+                            <img src="/img/white-logo.svg" alt="Logotipo do site meajuda.ai, formada por dois sinais de interrogação brancos">
+
+                            <div class="footer-website-logo-texts">
+                                <h1>meajuda.ai</h1>
+                                <h2>o seu portal de perguntas e respostas</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-section">
+                <div class="container">
+                    <div class="footer-bottom-section-content">
+                        <p>Copyright 2020 &copy; <a href="/">meajuda.ai</a></p>
+                        <p>developed with <img src="/img/heart-emoji.png" alt="Emoji de coração"> by <a href="https://github.com/eliasbiondo">Elias Biondo</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        
+    </div>
 
 </body>
 </html>
+
