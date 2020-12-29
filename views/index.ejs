@@ -1,37 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Charset, viewport, favicon, global fonts, global stylesheets-->
+    <%- include ('partials/head.ejs') %>
+
+    <!-- Custom -->
+
     <title>Página Inicial | meajuda.ai</title>
-
-    <!-- Favicon -->
-
-    <link 
-    rel="icon" 
-    type="image/svg" 
-    href="/img/blue-logo.svg"
-    >
-
-    <!-- Google Fonts -->
-
-    <link 
-    rel="preconnect" 
-    href="https://fonts.gstatic.com"
-    >
-
-    <link 
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
-    >
-
-    <!-- Stylesheets -->
-
-    <link
-    rel="stylesheet"
-    href="/css/main.css"
-    >
-
 
     <link
     rel="stylesheet"
@@ -43,34 +19,7 @@
     <div class="home-page">
         
         <!-- Header -->
-        <header>
-            <div class="container">
-                <div class="header-content">
-
-                    <div class="website-logo">
-
-                        <img 
-                        src="/img/blue-logo.svg" 
-                        alt="Logotipo do site meajuda.ai, formada por dois sinais de interrogação azuis."
-                        >
-
-                        <div class="website-logo-texts">
-                            <h1>meajuda.ai</h1>
-                            <h2>o seu portal de perguntas e respostas</h2>
-                        </div>
-
-                    </div>  
-
-                    <a 
-                    class="ask-a-question-btn" 
-                    href="/perguntar"
-                    >
-                        Fazer uma pergunta
-                    </a>
-
-                </div>
-            </div>
-        </header>
+        <%- include ('partials/header.ejs') %>
 
         <!-- 'Last questions' section -->
         <div class="last-questions-section">
@@ -106,31 +55,7 @@
         </div>
 
         <!-- Footer -->
-        <footer>
-            <div class="footer-top-section">
-                <div class="container">
-                    <div class="footer-top-section-content">
-                        <div class="footer-website-logo">
-                            <img src="/img/white-logo.svg" alt="Logotipo do site meajuda.ai, formada por dois sinais de interrogação brancos">
-
-                            <div class="footer-website-logo-texts">
-                                <h1>meajuda.ai</h1>
-                                <h2>o seu portal de perguntas e respostas</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom-section">
-                <div class="container">
-                    <div class="footer-bottom-section-content">
-                        <p>Copyright 2020 &copy; <a href="/">meajuda.ai</a></p>
-                        <p>developed with <img src="/img/heart-emoji.png" alt="Emoji de coração"> by <a href="https://github.com/eliasbiondo">Elias Biondo</a></p>
-                    </div>
-                </div>
-            </div>
-
-        </footer>
+        <%- include ('partials/footer.ejs') %>
         
     </div>
 

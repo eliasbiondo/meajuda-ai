@@ -1,3 +1,4 @@
+/* Default Reset*/
 :root {
     font-size: 62.5%;
     --primary: #267DFF;
@@ -17,3 +18,156 @@
     list-style-type: none;
     border: none;
 }
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    width: clamp(3rem, 80vw, 120rem);
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 4rem 0rem;
+    display: flex;
+    justify-content: center;
+}
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .website-logo {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+                .website-logo img {
+                    width: clamp(4.5rem, 8vw, 9rem);
+                }
+
+                .website-logo-texts {
+                    margin: 0rem 1rem;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                    .website-logo-texts h1 {
+                        font-size: clamp(3.2rem, 5vw, 6.4rem);
+                        font-weight: 700;
+                        line-height: clamp(3.2rem, 6vw, 6.4rem);
+                    }
+
+                    .website-logo-texts h2 {
+                        font-size: clamp(1.6rem, 2vw, 3.2rem);
+                        font-weight: 200;
+                        line-height: clamp(1.6rem, 3vw, 3.2rem);
+                    }
+
+            .ask-a-question-btn {
+                width: clamp(20rem, 20vw, 40rem);
+                height: clamp(2.5rem, 8vw, 5rem);
+                padding: 0rem 1rem;
+                background-color: var(--primary);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: clamp(1.75rem, 4vw, 3.5rem);
+                font-size: clamp(1.6rem, 1vw, 3.2rem);
+                font-weight: 400;
+                line-height: clamp(1.6rem, 3vw, 3.2rem);
+                color: white;
+                text-align: center;
+            }
+
+            .ask-a-question-btn:hover {
+                background-color: var(--hovered);
+            }
+
+/* Footer */
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .footer-top-section {
+        width: 100%;
+        height: 22rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8rem 8rem 0rem 0rem;
+        background-color: var(--primary);
+    }
+
+        .footer-top-section-content {
+            display: flex;
+            align-items: center;
+        }
+
+            .footer-website-logo {
+                display: flex;
+                align-items: center;
+            }
+
+                .footer-website-logo img {
+                    width: clamp(4.5rem, 8vw, 9rem);
+                }
+
+                .footer-website-logo-texts {
+                    margin: 0rem 1rem;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                    .footer-website-logo-texts h1 {
+                        font-size: clamp(3.2rem, 5vw, 6.4rem);
+                        font-weight: 700;
+                        line-height: clamp(3.2rem, 6vw, 6.4rem);
+                        color: white;
+                    }
+
+                    .footer-website-logo-texts h2 {
+                        font-size: clamp(1.6rem, 2vw, 3.2rem);
+                        font-weight: 200;
+                        line-height: clamp(1.6rem, 3vw, 3.2rem);
+                        color: white;
+                    }
+
+    .footer-bottom-section {
+        width: 100%;
+        height: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+
+        .footer-bottom-section-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .footer-bottom-section-content p {
+                font-size: clamp(1.2rem, 2vw, 2.4rem);
+                font-weight: 200;
+                line-height: clamp(1.2rem, 2vw, 2.4rem);
+                color: white;
+            }
+
+                .footer-bottom-section-content img {
+                    width: clamp(1.2rem, 2vw, 2.4rem);
+                }
+                .footer-bottom-section-content  p a {
+                    color: white;
+                    font-weight: 700;
+                }
