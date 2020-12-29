@@ -82,45 +82,19 @@
                         <img src="/img/last-questions-dashed-line.svg">
                     </div>
 
-                    <article class="question">
+                    <% questions.forEach( question => {%>
+                        <article class="question">
                         <div class="question-text-area">
-                            <h1>Como utilizar o SQL com o Sequelize?</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a cursus est. Cras venenatis pellentesque dolor, a semper odio fermentum sed. Mauris hendrerit sapien.</p>
+                            <h1> <%= question.title %> </h1>
+                            <p> <%= question.description %> </p>
                         </div>
-                        <a class="question-btn-area" href="">
+                        <a class="question-btn-area" href="/pergunta?id=<%= question.id %>">
                             <img src="/img/next-arrow.svg" alt="Responder pergunta">
                         </a>
                     </article>
+                    <% }) %>
+                    
 
-                    <article class="question">
-                        <div class="question-text-area">
-                            <h1>Como utilizar o SQL com o Sequelize?</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a cursus est. Cras venenatis pellentesque dolor, a semper odio fermentum sed. Mauris hendrerit sapien.</p>
-                        </div>
-                        <a class="question-btn-area" href="">
-                            <img src="/img/next-arrow.svg" alt="Responder pergunta">
-                        </a>
-                    </article>
-
-                    <article class="question">
-                        <div class="question-text-area">
-                            <h1>Como utilizar o SQL com o Sequelize?</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a cursus est. Cras venenatis pellentesque dolor, a semper odio fermentum sed. Mauris hendrerit sapien.</p>
-                        </div>
-                        <a class="question-btn-area" href="">
-                            <img src="/img/next-arrow.svg" alt="Responder pergunta">
-                        </a>
-                    </article>
-
-                    <article class="question">
-                        <div class="question-text-area">
-                            <h1>Como utilizar o SQL com o Sequelize?</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a cursus est. Cras venenatis pellentesque dolor, a semper odio fermentum sed. Mauris hendrerit sapien.</p>
-                        </div>
-                        <a class="question-btn-area" href="">
-                            <img src="/img/next-arrow.svg" alt="Responder pergunta">
-                        </a>
-                    </article>
 
                     <div class="section-footer">
                         <img src="/img/see-all-dashed-line.svg">
