@@ -1,7 +1,6 @@
 // Importing modules
 const express = require('express');
 const bodyParser = require('body-parser');
-const Sequelize = require('sequelize');
 const env = require('dotenv');
 const colors = require('colors');
 const routes = require('./routes');
