@@ -3,6 +3,7 @@
     --primary: #267DFF;
     --secondary: #F0F4FA;
     --hovered: #2269d4;
+    --linear: linear-gradient(180deg, #267DFF 0%, #2763FF 100%);
 }
 
 * {

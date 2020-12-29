@@ -144,11 +144,11 @@ body {
                     justify-content: center;
                     align-items: center;
                     border-radius: 7rem;
-                    background-color: var(--primary);
+                    background: var(--linear);
                 }
 
                 .question-btn-area:hover {
-                    background-color: var(--hovered);
+                    background: var(--hovered);
                 }
 
                     .question-btn-area img {
