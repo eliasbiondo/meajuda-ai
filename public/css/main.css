@@ -171,3 +171,64 @@ footer {
                     color: white;
                     font-weight: 700;
                 }
+
+/* Components */
+
+.section-title {
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .section-title p {
+        flex: 1;
+        margin-right: 1rem;
+        background-color: white;
+        font-size: clamp(2.4rem, 2vw, 4.8rem);
+        font-weight: 200;
+        line-height: clamp(2.4rem, 2vw, 4.8rem);
+    }
+
+    .section-title img {
+        width: 70%;
+        flex: 8;
+    }
+
+.question {
+    width: 100%;
+    height: 16rem;
+    padding: 3rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary);
+    border-radius: 3.5rem;
+}
+
+.question + .question {
+    margin-top: 3rem;
+}
+
+.question:last-of-type {
+    margin-bottom: 4rem;
+}
+
+    .question-text-area {
+        flex: 8;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+        .question-text-area h1 {
+            font-size: clamp(1.6rem, 2vw, 3.2rem);
+            font-weight: 300;
+            line-height: clamp(1.6rem, 2vw, 3.2rem);
+        }
+
+        .question-text-area p {
+            margin-top: .5rem;
+            font-size: clamp(1.2rem, 1.5vw, 2.4rem);
+            font-weight: 200;
+            line-height: clamp(1.2rem, 1.5vw, 2.4rem);
+        }

@@ -1,0 +1,134 @@
+.question-section {
+    width: 100%;
+    margin: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+}
+
+    .question-section-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+.answers-section {
+    width: 100%;
+    margin: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+}
+
+    .answers-section-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .answers {
+            display: flex;
+            flex-direction: column;
+        }
+
+            .reply {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+
+            .reply + .reply {
+                margin-top: 3rem;
+            }
+
+            .reply:last-of-type {
+                margin-bottom: 4rem;
+            }
+
+                .reply-img {
+                    flex: 1;
+                    display: flex;
+                    align-items: flex-start;
+                }
+
+                    .reply-img img {
+                        margin-top: 2rem;
+                        margin-right: 2rem;
+                    }
+
+                .reply-text-area {
+                    flex: 8;
+                    padding: 2rem 4.5rem 3rem 4.5rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: var(--secondary);
+                    border-radius: 3.5rem;
+                }
+
+                .reply-text-area p {
+                    margin-top: .5rem;
+                    font-size: clamp(1.2rem, 1.5vw, 2.4rem);
+                    font-weight: 200;
+                    line-height: clamp(1.2rem, 1.5vw, 2.4rem);
+                }
+
+        .submit-your-reply {
+            width: 100%;
+            height: 44rem;
+            padding: 5rem 4rem;
+            margin-bottom: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: var(--secondary);
+            border-radius: 3.5rem;
+        }
+
+            .submit-your-reply form {
+                width: 100%;
+            }
+
+                .submit-your-reply-textarea {
+                    width: 100%;
+                    height: 27rem;
+                    padding: 4rem;
+                    resize: none;
+                    border-radius: 3rem;
+                    font-size: clamp(1.2rem, 2vw, 3.6rem);
+                    font-weight: 400;
+                    line-height: clamp(1.8rem, 2vw, 3.6rem);
+                    overflow-y: hidden;
+                }
+
+                .box-description {
+                    margin-top: 2rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                    .box-description p {
+                        flex: 7;
+                        margin-right: 2rem;
+                        font-size: clamp(1.2rem, 1.5vw, 2.4rem);
+                        font-weight: 200;
+                        line-height: clamp(1.5rem, 1.8vw, 2.4rem);
+                    }
+
+                    .box-description button {
+                        flex: 3;
+                        width: clamp(8rem, 10vw, 15rem);
+                        height: clamp(6rem, 5vw, 7rem);
+                        font-size: clamp(1.2rem, 1.5vw, 2.4rem);
+                        background: var(--primary);
+                        color: white;
+                        outline: none;
+                        border: none;
+                        border-radius: 3.5rem;
+                        cursor: pointer;
+                    }
+
+                    .box-description button:hover {
+                        background-color: var(--hovered);
+                    }
+
+
+            

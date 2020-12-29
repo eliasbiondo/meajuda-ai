@@ -1,5 +1,7 @@
 // Importing modules
 const express = require('express');
+const http = require('http');
+const reload = require('reload');
 const bodyParser = require('body-parser');
 const env = require('dotenv');
 const colors = require('colors');
@@ -40,6 +42,8 @@ connection
 app.use(routes);
 
 // Server config
-app.listen(port, error => {
+const server = http.createServer(app);
+server.listen(port, error => {
     console.log(`${error ? '\r\nThere was an error while initializing server.' + error : `\r\nServer started successfully on port ${port}!`.bold.green}`)
 })
+reload(app)

@@ -3,6 +3,7 @@
 <head>
 
     <!-- Charset, viewport, favicon, global fonts, global stylesheets-->
+    
     <%- include ('partials/head.ejs') %>
 
     <!-- Custom -->
@@ -33,14 +34,14 @@
 
                     <% questions.forEach( question => {%>
                         <article class="question">
-                        <div class="question-text-area">
-                            <h1> <%= question.title %> </h1>
-                            <p> <%= question.description %> </p>
-                        </div>
-                        <a class="question-btn-area" href="/pergunta?id=<%= question.id %>">
-                            <img src="/img/next-arrow.svg" alt="Responder pergunta">
-                        </a>
-                    </article>
+                            <div class="question-text-area">
+                                <h1> <%= question.title %> </h1>
+                                <p> <%= question.description %> </p>
+                            </div>
+                            <a class="question-btn-area" href="/pergunta?id=<%= question.id %>">
+                                <img src="/img/next-arrow.svg" alt="Responder pergunta">
+                            </a>
+                        </article>
                     <% }) %>
                     
 
