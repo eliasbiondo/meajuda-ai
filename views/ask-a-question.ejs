@@ -1,69 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title> Perguntar | meajuda.ai</title>
 
-    <!-- Stylesheets -->
+    <!-- Charset, viewport, favicon, global fonts, global stylesheets-->
 
-    <link 
-    rel="stylesheet" 
-    href="/css/main.css"
-    >
+    <%- include ('partials/head.ejs') %>
+
+    <!-- Custom -->
+
+    <!-- <meta http-equiv="refresh" content="5"> -->
+
+    <title> Fazer uma pergunta | meajuda.ai</title>
 
     <link
     rel="stylesheet"
-    href="/css/perguntar.css"
+    href="/css/ask-a-question.css"
     >
 
-    <!-- Fonts -->
-    <link 
-    rel="preconnect" 
-    href="https://fonts.gstatic.com"
-    >
-
-    <link 
-    href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" 
-    rel="stylesheet"
-    >
 </head>
 <body>
-    <div class="content">
-        <div class="main-section">
-            <div class="page-title">
-                <h1>Faça a sua pergunta</h1>
-                <h2>É bem fácil, rápido e prático.</h2>
-            </div>
-            <form action="/perguntar/salvarpergunta" method="POST">
-                <div class="input">
-                    <input type="text" name="title" id="title" autocomplete="off" required>
-                    <label for="title">Título</label>
-                </div>
-                <div class="input">
-                    <textarea name="description" id="description" autocomplete="off" required></textarea>
-                    <label for="title">Descrição</label>
-                </div>
-                <dib class="buttons">
-                    <div class="back_btn">
-                        <button type="button" onclick="goBack()">
-                            
-                        </button>
-                    </div>
-                    <div class="submit">
-                        <button type="submit">
-                            Perguntar
-                        </button>
-                    </div>
-                </dib>
-            </form>
 
+    <!-- Header -->
+    <%- include ('partials/header.ejs') %>
+
+    <!-- 'Ask a question' Section -->
+    <div class="ask-a-question-section">
+        <div class="container">
+            <div class="ask-a-question-content">
+
+                <div class="section-title">
+                    <p>Perguntar</p>
+                    <img src="/img/last-questions-dashed-line.svg">
+                </div>
+
+                <div class="submit-your-question">
+                    <form id="submit-form" action="/perguntar/salvarpergunta" method="POST">
+                        <input class="submit-your-question-input-question-title" type="text" name="title" id="questionTitle" placeholder="Título (min. 20 e max. 45 caracteres)" minlength="20" maxlength="45" required>
+                        <textarea class="submit-your-question-textarea" name="description" id="questionDescription" placeholder="Descrição" minlength="40" maxlength="480" required ></textarea>
+                        <div class="box-description">
+                            <p>A sua descrição deve conter no mínimo 40 e no máximo 480 caracteres.</p>
+                            <button id="submitBtn" type="submit">Perguntar</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
         </div>
     </div>
-    <script>
-        function goBack() {
-            window.history.back();
-        }
-    </script>
+
+    <!-- Footer -->
+    <%- include ('partials/footer.ejs') %>
 </body>
+<script src="reload/reload.js"></script>
+<script src="/js/ask-a-question.js"></script>
 </html>
