@@ -1,12 +1,12 @@
 const form = document.querySelector('#submit-form');
 const reply = document.querySelector('#reply');
-const replyLength = reply.value.length;
 const warningText = document.querySelector('.box-description p')
 const submitBtn = document.querySelector('#submitBtn');
 
 function formValidation(event) {
     event.preventDefault();
-    
+    const replyLength = reply.value.length;
+
     if (replyLength >= 30 && replyLength <= 480) {
         form.submit();
     } else if (replyLength < 30) {
@@ -31,10 +31,10 @@ function replyLengthUpdate() {
     }
 }
 
+submitBtn.addEventListener("click", formValidation);
 
 window.onload = function eventListeners() {
     reply.addEventListener("keyup", replyLengthUpdate)
-    submitBtn.addEventListener("click", formValidation);
     submitBtn.disabled = true;
 }
 
