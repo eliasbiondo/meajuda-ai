@@ -31,6 +31,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-start;
+                word-break: break-word
             }
 
             .reply + .reply {
@@ -60,6 +61,7 @@
                     align-items: center;
                     background-color: var(--secondary);
                     border-radius: 3.5rem;
+                    word-break: break-word
                 }
 
                 .reply-text-area p {
@@ -67,6 +69,7 @@
                     font-size: clamp(1.2rem, 1.5vw, 2.4rem);
                     font-weight: 200;
                     line-height: clamp(1.2rem, 1.5vw, 2.4rem);
+                    word-break: break-word
                 }
 
         .submit-your-reply {

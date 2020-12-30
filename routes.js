@@ -76,9 +76,9 @@ routes.get('/pergunta', (req, res) => {
 })
 
 routes.post('/enviar-resposta', (req, res) => {
-    const {reply, questionId} = req.body
 
-    reply = filter.clean(reply);
+    reply = filter.clean(req.body.reply);
+    questionId = req.body.questionId;
 
     if(reply == '' || questionId == '') {
         res.redirect(`/pergunta?id=${questionId}`)
