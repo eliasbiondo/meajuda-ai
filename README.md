@@ -2,7 +2,7 @@
 
 ![enter image description here](https://i.imgur.com/HfbLk3C.jpg)
 
-<b> Me ajuda aí </b> is a 100% open-source question & answer web app. You can test it [clicking here](https://meajuda-ai.herokuapp.com/) or open the latest deployed version on [https://meajuda-ai.herokuapp.com/](https://meajuda-ai.herokuapp.com/). 
+<b> Me ajuda aí </b> is a 100% open-source question & answer web app. You can test it [clicking here](https://meajuda-ai.herokuapp.com/) or open the lastest deployed version on [https://meajuda-ai.herokuapp.com/](https://meajuda-ai.herokuapp.com/). 
 
 <b>Why?</b> I've decided to create this app to apply my newests acquired knowledge about node, express, sequelize, ejs and so and forth. Furthermore, I wanted to create a simple Q&A app: <b>no sign-up, no login, no personal data: only questions and answers.</b> Simple but useful.
 
