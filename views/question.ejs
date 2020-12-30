@@ -70,12 +70,12 @@
                 </div>
 
                 <div class="submit-your-reply">
-                    <form action="/enviar-resposta" method="POST">
-                        <textarea class="submit-your-reply-textarea" name="reply" id="reply" placeholder="Digite a sua resposta aqui.." maxlength="480"></textarea>
+                    <form id="submit-form" action="/enviar-resposta" method="POST">
+                        <textarea class="submit-your-reply-textarea" name="reply" id="reply" placeholder="Digite a sua resposta aqui.." minlength="30" maxlength="480" required ></textarea>
                         <input type="number" name="questionId" id="questionId" value="<%= questionId %>" hidden>
                         <div class="box-description">
                             <p>São aceitas respostas com no mínimo 30 e no máximo 480 caracteres.</p>
-                            <button type="submit">Responder</button>
+                            <button id="submitBtn" type="submit">Responder</button>
                         </div>
                     </form>
                 </div>
@@ -89,4 +89,5 @@
     <%- include ('partials/footer.ejs') %>
 </body>
 <script src="reload/reload.js"></script>
+<script src="/js/question.js"></script>
 </html>

@@ -113,6 +113,14 @@
                         line-height: clamp(1.5rem, 1.8vw, 2.4rem);
                     }
 
+                    .box-description p.valid {
+                        color: var(--primary);
+                    }
+
+                    .box-description p.invalid {
+                        color: red;
+                    }
+
                     .box-description button {
                         flex: 3;
                         width: clamp(8rem, 10vw, 15rem);
@@ -128,6 +136,10 @@
 
                     .box-description button:hover {
                         background-color: var(--hovered);
+                    }
+
+                    .box-description button[disabled] {
+                        cursor: not-allowed;
                     }
 
 
