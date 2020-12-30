@@ -144,3 +144,39 @@
 
 
             
+/* Mobile Version */
+@media screen and (max-width: 430px) {
+    
+    .section-title {
+        margin-bottom: 1rem !important;
+    }
+    
+    .reply {
+        flex-direction: column;
+    }
+
+        .reply img {
+            width: 5rem;
+        }
+
+    .submit-your-reply {
+        height: auto;
+        padding: 2rem 2rem;
+    }
+
+        .box-description {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+            .box-description p {
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+
+            .box-description button {
+                flex: none;
+                width: 90%;
+                height: 3rem;
+            }
+}
