@@ -3,6 +3,11 @@ const routes = express.Router();
 const Questions = require('./models/Questions');
 const Replies = require('./models/Replies')
 
+/* bad-words filter */
+const Filter = require('bad-words'), filter = new Filter();
+const badWords = require('./bad-words')
+filter.addWords(...badWords);
+
 routes.get('/', (req, res) => {
 
     Questions.findAll({raw: true})
@@ -27,8 +32,8 @@ routes.get('/perguntar', (req, res) => {
 })
 
 routes.post('/perguntar/salvarpergunta', (req, res) => {
-    const title = req.body.title;
-    const description = req.body.description;
+    const title = filter.clean(req.body.title);
+    const description = filter.clean(req.body.description);
 
     if(title == '' || description == '') {
         res.redirect('/perguntar')
@@ -72,6 +77,8 @@ routes.get('/pergunta', (req, res) => {
 
 routes.post('/enviar-resposta', (req, res) => {
     const {reply, questionId} = req.body
+
+    reply = filter.clean(reply);
 
     if(reply == '' || questionId == '') {
         res.redirect(`/pergunta?id=${questionId}`)

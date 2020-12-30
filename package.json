@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/eliasbiondo/me-ajuda-ai#readme",
   "dependencies": {
+    "bad-words": "^3.0.4",
     "body-parser": "^1.19.0",
     "colors": "^1.4.0",
     "dotenv": "^8.2.0",
