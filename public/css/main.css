@@ -17,7 +17,7 @@
     text-decoration: none;
     list-style-type: none;
     border: none;
-    word-wrap: break-word;
+    word-break: break-word;
 }
 
 body {
