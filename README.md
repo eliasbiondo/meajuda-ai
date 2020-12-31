@@ -33,10 +33,8 @@ You can see this website layout  [clicking here](https://www.figma.com/file/cDNv
 
 ## ⏳  Pending Improvements
 
--  Ask a question form validation
 -   Preloading screen
 -   Animations
--   Bad words filter
 
 ## 🏡 License
 
