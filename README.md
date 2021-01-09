@@ -1,4 +1,4 @@
-# ![enter image description here](https://i.imgur.com/v050DTL.png)
+# ![me ajuda aí logo](https://i.ibb.co/T4qRskz/meajuda-ali-logo-git-hub-white-and-black-theme.png)
 
 ![enter image description here](https://i.imgur.com/HfbLk3C.jpg)
 
